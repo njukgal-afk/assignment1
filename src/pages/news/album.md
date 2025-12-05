@@ -11,7 +11,7 @@ Source: https://www.oliviadeano.com/ official site
 
 Her highly successful second album, The Art of Loving, was released on September 26, 2025, and has been a global phenomenon.
 
-![Album Poster](/public/images/album.jpg)
+![Album Poster](/images/album.jpg)
 
 Her latest album, The Art of Loving, is a stunning showcase of her soulful voice and emotional storytelling. With a seamless blend of pop, R&B, and jazz influences, the album explores themes of love, self-discovery, and vulnerability. Each track captures raw emotion, from the heartfelt ballads to upbeat anthems that celebrate connection and resilience.
 

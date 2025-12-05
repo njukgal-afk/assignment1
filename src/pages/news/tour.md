@@ -11,4 +11,4 @@ To an eagerly awaiting audience, multi-BRIT Award, GRAMMY and Mercury Prize nomi
 
 Effortlessly blending warmth and honesty throughout her heartfelt depictions of romantic and platonic love, Olivia elegantly displays her honed and mastered musical craft through her ever-resonant songwriting.
 
-![Tour Timetable](/public/images/olivia3.jpg)
+![Tour Timetable](/images/olivia3.jpg)
