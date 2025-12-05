@@ -1,0 +1,67 @@
+<div class="playlistcontainer">
+        <div class="playlistfirst">
+        <h1>Playlist (New Album: Art of Loving)</h1>
+        <ul id="playlist">
+          <li><p>Nice to Each Other</p></li>
+         <li><p>So Easy</p></li>
+          <li><p>A Couple minute</p></li>
+          <li><p>Baby Steps</p></li>
+          <li><p>Close Up</p></li>
+        </ul>
+
+
+        <form id="addSongForm">
+          <input type="text" id="newSong" placeholder="Enter a song title" required>
+         <div class="buttoncontainer">
+<button type="submit">Add Song</button>
+<button type="button" id="shuffleBtn">Shuffle</button>
+         </div>
+        </form>
+          </div>  
+</div>
+
+<script type="module" client:load>
+const playlist = document.getElementById("playlist");
+const shuffleBtn = document.getElementById("shuffleBtn");
+const addSongForm = document.getElementById("addSongForm");
+const newSongInput = document.getElementById("newSong");
+
+let songs = Array.from(playlist.querySelectorAll("li p")).map(
+  (el) => el.textContent
+);
+
+function renderPlaylist() {
+  playlist.innerHTML = "";
+  songs.forEach((song) => {
+    const li = document.createElement("li");
+    const p = document.createElement("p");
+    p.textContent = song;
+    li.appendChild(p);
+    playlist.appendChild(li);
+  });
+}
+
+
+function shuffleSongs() {
+  for (let i = songs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [songs[i], songs[j]] = [songs[j], songs[i]];
+  }
+  renderPlaylist();
+}
+
+addSongForm.addEventListener("submit", e=> {
+  e.preventDefault();
+  const newSong = newSongInput.value.trim();
+  if (newSong) {
+    songs.push(newSong);
+    newSongInput.value = "";
+    renderPlaylist();
+  }
+});
+
+shuffleBtn.addEventListener("click", shuffleSongs);
+
+renderPlaylist();
+
+</script>

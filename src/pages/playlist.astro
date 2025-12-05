@@ -3,21 +3,17 @@ import '../styles/global.css';
 import Nav from '../components/nav.astro';
 import Footer from '../components/Footer.astro';
 import Head from '../components/Head.astro';
+import PlaylistClient from '../components/PlaylistClient.astro';
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <Head/>
   <body>
-     <Nav/>
+    <Nav/>
     <main>
-      <div class="homecontainer">
-        <div class="item1">
-          <img src="../public/images/olivia.jpg" alt="Olivia Dean" />
-        </div>
-        <div class="item2">
-          <a href="https://youtu.be/0eioXekU6rY?si=suqQ7raUBbjpqKLN"> Checkout Latest Album</a>
-        </div>
+        <PlaylistClient/>
+        <script type="module" src="../src/scripts/playlist.js" client: load></script>
       </div>
       <Footer/>
     </main>

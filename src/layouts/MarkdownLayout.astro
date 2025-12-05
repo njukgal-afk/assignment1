@@ -1,0 +1,25 @@
+---
+const {title} = Astro.props;
+import '../styles/global.css';
+import Nav from '../components/nav.astro';
+import Footer from '../components/Footer.astro';
+import Head from '../components/Head.astro';
+---
+
+
+<html>
+    <head>   
+        <title> {title} </title>
+    </head>
+      <Head/>
+    <body>
+         <Nav/>
+         
+         <div class="news">
+        <main>
+            <slot />
+        </main>
+        </div>
+        <Footer/>
+    </body>
+</html>

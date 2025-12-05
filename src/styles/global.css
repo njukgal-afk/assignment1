@@ -1,0 +1,171 @@
+h1 {
+  color: #111111;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 25px;
+  display: inline;
+}
+a {
+  color: #111111;
+  text-decoration: none;
+  font-family: "Gloria Hallelujah", cursive;
+}
+h2 {
+  font-size: 23px;
+  color: #111111;
+  font-family: "Gloria Hallelujah", cursive;
+}
+h3 {
+  display: inline;
+  font-size: 19px;
+  color: #111111;
+  font-family: "Gloria Hallelujah", cursive;
+}
+p {
+  font-size: 16px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 7rem;
+  justify-content: center;
+  padding: 1rem;
+  width: auto;
+  margin: 0px;
+  left: 0;
+  top: 3rem;
+  position: sticky;
+  border-bottom: #111111 1px solid;
+}
+nav ul li a {
+  color: #111111;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #f74b9e;
+}
+body {
+  background-color: #fdf8f9;
+  padding-bottom: 10%;
+}
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.myheader {
+  text-align: center;
+}
+.homecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  gap: 1rem;
+}
+.item1 img {
+  height: 400px;
+  width: auto;
+}
+.item2 {
+  border: 1px solid #111111;
+  padding: 0.2rem;
+  width: 250px;
+  text-align: center;
+}
+.item2:hover {
+  background-color: #ffbada;
+}
+.first a:hover {
+  color: #f74b9e;
+}
+
+.aboutcontainer {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 5%;
+  margin-left: 20%;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.two img {
+  height: 350px;
+  width: auto;
+}
+.two {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  justify-self: center;
+}
+.newscontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.playlistcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.buttoncontainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.buttoncontainer button {
+  background-color: #111111;
+  color: #fbf9f9;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Gloria Hallelujah", cursive;
+}
+.buttoncontainer button:hover {
+  background-color: #f292c1;
+}
+.news {
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 700px;
+}
+.news img {
+  margin-top: 6%;
+  height: 550px;
+}
+.album {
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 700px;
+}
+.album img {
+  margin-top: 2%;
+  height: 300px;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+.author {
+  margin-left: 10%;
+}
+.logo {
+  margin-right: 10%;
+}
+
+footer {
+  background-color: #111111;
+  padding: 0.5rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+}
+footer p {
+  color: #fdf8f9;
+  font-size: 13px;
+}
