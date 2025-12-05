@@ -2,6 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["vite/client"]
-  }
+    "types": ["vite/client", "astro/client"]
+  },
+  "include": ["src"]
 }
